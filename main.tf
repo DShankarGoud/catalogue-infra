@@ -9,7 +9,7 @@ module "vpc" {
 
 module "documentdb" {
   depends_on          = [module.vpc]
-  source              = "git::https://github.com/raghudevopsb64/tf-module-documentdb.git"
+  source              = "git::https://github.com/DShankarGoud/tf-module-documentdb.git"
   ENGINE              = var.ENGINE
   ENGINE_VERSION      = var.ENGINE_VERSION
   NODE_TYPE           = var.NODE_TYPE
